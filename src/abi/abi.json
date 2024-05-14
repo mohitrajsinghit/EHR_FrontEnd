@@ -1,0 +1,2278 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "address[]",
+				"name": "_patients",
+				"type": "address[]"
+			},
+			{
+				"internalType": "address[]",
+				"name": "_nurses",
+				"type": "address[]"
+			},
+			{
+				"internalType": "address[]",
+				"name": "_ortho",
+				"type": "address[]"
+			},
+			{
+				"internalType": "address[]",
+				"name": "_neuro",
+				"type": "address[]"
+			},
+			{
+				"internalType": "address[]",
+				"name": "_cardio",
+				"type": "address[]"
+			},
+			{
+				"internalType": "address[]",
+				"name": "_gastro",
+				"type": "address[]"
+			},
+			{
+				"internalType": "address[]",
+				"name": "_uro",
+				"type": "address[]"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [],
+		"name": "AccessControlBadConfirmation",
+		"type": "error"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "account",
+				"type": "address"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "neededRole",
+				"type": "bytes32"
+			}
+		],
+		"name": "AccessControlUnauthorizedAccount",
+		"type": "error"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_medicalRecordNumber",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_userAddress",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "_patientName",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_age",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_gender",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_bloodGroup",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_testDate",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_electrocardiogramTestReport",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_echocardiogramTestReport",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_stressTestReport",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_cardiacmriTestReport",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_doctorName",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_MedicineName",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_reportDate",
+				"type": "string"
+			}
+		],
+		"name": "addCardiologyTestReport",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_medicalRecordNumber",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_userAddress",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "_patientName",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_age",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_gender",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_bloodGroup",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_testDate",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_breathTestReport",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_liverbiospyTestReport",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_upperendoscopyTestReport",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_capsuleendoscopyTestReport",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_doctorName",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_MedicineName",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_reportDate",
+				"type": "string"
+			}
+		],
+		"name": "addGastroenterologyTestReport",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_medicalRecordNumber",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_userAddress",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "_patientName",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_age",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_gender",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_bloodGroup",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_testDate",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_neurologyexaminationTestReport",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_electroencephalogramTestReport",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_lumbarpunctureTestReport",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_neuropsychologicalTestReport",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_geneticTestReport",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_doctorName",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_MedicineName",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_reportDate",
+				"type": "string"
+			}
+		],
+		"name": "addNeurologyTestReport",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_medicalRecordNumber",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_userAddress",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "_patientName",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_age",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_gender",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_bloodGroup",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_testDate",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_xrayTestReport",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_mriTestReport",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_ctScanTestReport",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_ultrasoundTestReport",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_doctorName",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_MedicineName",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_reportDate",
+				"type": "string"
+			}
+		],
+		"name": "addOrthopedicsTestReport",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_medicalRecordNumber",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_userAddress",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "_patientName",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_age",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_gender",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_bloodGroup",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_testDate",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_urinalysisTestReport",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_urinarycultureTestReport",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_cystoscopyTestReport",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_prostatebiopsyTestReport",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_doctorName",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_MedicineName",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_reportDate",
+				"type": "string"
+			}
+		],
+		"name": "addUrologyTestReport",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_sender",
+				"type": "address"
+			},
+			{
+				"internalType": "uint64",
+				"name": "_type",
+				"type": "uint64"
+			}
+		],
+		"name": "addUser",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "caller",
+				"type": "address"
+			}
+		],
+		"name": "CallerNotMinter",
+		"type": "error"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "role",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "address",
+				"name": "account",
+				"type": "address"
+			}
+		],
+		"name": "grantRole",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "role",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "address",
+				"name": "callerConfirmation",
+				"type": "address"
+			}
+		],
+		"name": "renounceRole",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "role",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "address",
+				"name": "account",
+				"type": "address"
+			}
+		],
+		"name": "revokeRole",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "bytes32",
+				"name": "role",
+				"type": "bytes32"
+			},
+			{
+				"indexed": true,
+				"internalType": "bytes32",
+				"name": "previousAdminRole",
+				"type": "bytes32"
+			},
+			{
+				"indexed": true,
+				"internalType": "bytes32",
+				"name": "newAdminRole",
+				"type": "bytes32"
+			}
+		],
+		"name": "RoleAdminChanged",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "bytes32",
+				"name": "role",
+				"type": "bytes32"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "account",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "sender",
+				"type": "address"
+			}
+		],
+		"name": "RoleGranted",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "bytes32",
+				"name": "role",
+				"type": "bytes32"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "account",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "sender",
+				"type": "address"
+			}
+		],
+		"name": "RoleRevoked",
+		"type": "event"
+	},
+	{
+		"inputs": [],
+		"name": "ADMIN_ROLE",
+		"outputs": [
+			{
+				"internalType": "bytes32",
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "CARDIO_DOCTOR_ROLE",
+		"outputs": [
+			{
+				"internalType": "bytes32",
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "cardioRecordId",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "checkUser",
+		"outputs": [
+			{
+				"internalType": "uint64",
+				"name": "",
+				"type": "uint64"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "DEFAULT_ADMIN_ROLE",
+		"outputs": [
+			{
+				"internalType": "bytes32",
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_user",
+				"type": "address"
+			}
+		],
+		"name": "findRecords",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "medicalRecordNumber",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "userAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "patientName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "age",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "gender",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "bloodGroup",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "testDate",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "xrayTestReport",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "mriTestReport",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "ctScanTestReport",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "ultrasoundTestReport",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "doctorName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "MedicineName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "reportDate",
+						"type": "string"
+					}
+				],
+				"internalType": "struct healthrecordsystem.OrthopedicsTestReport[]",
+				"name": "",
+				"type": "tuple[]"
+			},
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "medicalRecordNumber",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "userAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "patientName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "age",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "gender",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "bloodGroup",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "testDate",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "electrocardiogramReport",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "echocardiogramReport",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "stressTestReport",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "cardiacMRIReport",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "doctorName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "MedicineName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "reportDate",
+						"type": "string"
+					}
+				],
+				"internalType": "struct healthrecordsystem.CardiologyTestReport[]",
+				"name": "",
+				"type": "tuple[]"
+			},
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "medicalRecordNumber",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "userAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "patientName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "age",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "gender",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "bloodGroup",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "testDate",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "neurologicalExaminationReport",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "eegReport",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "lumbarPunctureReport",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "neuropsychologicalTestingReport",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "geneticTestingReport",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "doctorName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "MedicineName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "reportDate",
+						"type": "string"
+					}
+				],
+				"internalType": "struct healthrecordsystem.NeurologyTestReport[]",
+				"name": "",
+				"type": "tuple[]"
+			},
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "medicalRecordNumber",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "userAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "patientName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "age",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "gender",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "bloodGroup",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "testDate",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "breathTestsReport",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "liverBiopsyReport",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "upperEndoscopyReport",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "capsuleEndoscopyReport",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "doctorName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "MedicineName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "reportDate",
+						"type": "string"
+					}
+				],
+				"internalType": "struct healthrecordsystem.GastroenterologyTestReport[]",
+				"name": "",
+				"type": "tuple[]"
+			},
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "medicalRecordNumber",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "userAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "patientName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "age",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "gender",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "bloodGroup",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "testDate",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "urinalysisReport",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "urinaryCultureReport",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "cystoscopyReport",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "prostateBiopsyReport",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "doctorName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "MedicineName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "reportDate",
+						"type": "string"
+					}
+				],
+				"internalType": "struct healthrecordsystem.UrologyTestReport[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "GASTRO_DOCTOR_ROLE",
+		"outputs": [
+			{
+				"internalType": "bytes32",
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "gastroRecordId",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getAllCardiologyRecords",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "medicalRecordNumber",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "userAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "patientName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "age",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "gender",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "bloodGroup",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "testDate",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "electrocardiogramReport",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "echocardiogramReport",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "stressTestReport",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "cardiacMRIReport",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "doctorName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "MedicineName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "reportDate",
+						"type": "string"
+					}
+				],
+				"internalType": "struct healthrecordsystem.CardiologyTestReport[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getAllGastroenterologyRecords",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "medicalRecordNumber",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "userAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "patientName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "age",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "gender",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "bloodGroup",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "testDate",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "breathTestsReport",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "liverBiopsyReport",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "upperEndoscopyReport",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "capsuleEndoscopyReport",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "doctorName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "MedicineName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "reportDate",
+						"type": "string"
+					}
+				],
+				"internalType": "struct healthrecordsystem.GastroenterologyTestReport[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getAllNeurologyRecords",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "medicalRecordNumber",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "userAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "patientName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "age",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "gender",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "bloodGroup",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "testDate",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "neurologicalExaminationReport",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "eegReport",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "lumbarPunctureReport",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "neuropsychologicalTestingReport",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "geneticTestingReport",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "doctorName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "MedicineName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "reportDate",
+						"type": "string"
+					}
+				],
+				"internalType": "struct healthrecordsystem.NeurologyTestReport[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getAllOrthopedicsRecords",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "medicalRecordNumber",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "userAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "patientName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "age",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "gender",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "bloodGroup",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "testDate",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "xrayTestReport",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "mriTestReport",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "ctScanTestReport",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "ultrasoundTestReport",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "doctorName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "MedicineName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "reportDate",
+						"type": "string"
+					}
+				],
+				"internalType": "struct healthrecordsystem.OrthopedicsTestReport[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getAllUrologyRecords",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "medicalRecordNumber",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "userAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "patientName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "age",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "gender",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "bloodGroup",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "testDate",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "urinalysisReport",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "urinaryCultureReport",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "cystoscopyReport",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "prostateBiopsyReport",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "doctorName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "MedicineName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "reportDate",
+						"type": "string"
+					}
+				],
+				"internalType": "struct healthrecordsystem.UrologyTestReport[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_medicalRecordNumber",
+				"type": "uint256"
+			}
+		],
+		"name": "getCardiologyTestReportDetails",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_medicalRecordNumber",
+				"type": "uint256"
+			}
+		],
+		"name": "getCardioMedicineList",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_medicalRecordNumber",
+				"type": "uint256"
+			}
+		],
+		"name": "getGastroenterologyTestReportDetails",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_medicalRecordNumber",
+				"type": "uint256"
+			}
+		],
+		"name": "getGastroMedicineList",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_medicalRecordNumber",
+				"type": "uint256"
+			}
+		],
+		"name": "getNeurologyTestReportDetails",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_medicalRecordNumber",
+				"type": "uint256"
+			}
+		],
+		"name": "getNeuroMedicineList",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_medicalRecordNumber",
+				"type": "uint256"
+			}
+		],
+		"name": "getOrthoMedicineList",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_medicalRecordNumber",
+				"type": "uint256"
+			}
+		],
+		"name": "getOrthopedicsTestReportDetails",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "role",
+				"type": "bytes32"
+			}
+		],
+		"name": "getRoleAdmin",
+		"outputs": [
+			{
+				"internalType": "bytes32",
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_medicalRecordNumber",
+				"type": "uint256"
+			}
+		],
+		"name": "getUrologyTestReportDetails",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_medicalRecordNumber",
+				"type": "uint256"
+			}
+		],
+		"name": "getUroMedicineList",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "role",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "address",
+				"name": "account",
+				"type": "address"
+			}
+		],
+		"name": "hasRole",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "NEURO_DOCTOR_ROLE",
+		"outputs": [
+			{
+				"internalType": "bytes32",
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "neuroRecordId",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "NURSE_ROLE",
+		"outputs": [
+			{
+				"internalType": "bytes32",
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "ORTHO_DOCTOR_ROLE",
+		"outputs": [
+			{
+				"internalType": "bytes32",
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "orthoRecordId",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "PATIENT_ROLE",
+		"outputs": [
+			{
+				"internalType": "bytes32",
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes4",
+				"name": "interfaceId",
+				"type": "bytes4"
+			}
+		],
+		"name": "supportsInterface",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "URO_DOCTOR_ROLE",
+		"outputs": [
+			{
+				"internalType": "bytes32",
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "uroRecordId",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
